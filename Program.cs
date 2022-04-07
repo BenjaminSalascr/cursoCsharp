@@ -36,11 +36,27 @@ if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
 }
 }
 Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
-if (total >= 15)
+// if (total >= 15)
+// {
+//     Console.WriteLine("You win!");
+// }
+// if (total < 15)
+//{
+//   Console.WriteLine("Sorry, you lose.");
+//}
+if (total >= 16)
 {
-    Console.WriteLine("You win!");
+    Console.WriteLine("You win a new car!");
 }
-if (total < 15)
+else if (total >=10)
 {
-    Console.WriteLine("Sorry, you lose.");
+    Console.WriteLine("You win a new laptop!");
+}
+else if (total ==7)
+{
+    Console.WriteLine("You win a trip for two!");
+}
+else
+{
+    Console.WriteLine("You win a kitten");
 }
